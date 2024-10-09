@@ -1,0 +1,35 @@
+# Change 'comments' to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: 'vector-nguyen'
+
+# If you are not using Google Analytics, please change 'google-ID' to an empty string
+google-ID: ''
+
+menu:
+- {name: 'About',   url: 'about/'}
+- {name: 'Blog', url: 'blog/'}
+# - {name: 'CV', url: 'docs/CV_NguyenVanPhuoc.pdf'}
+# - {name: 'Contact', url: 'contact.html'}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+social:
+- {icon: 'github',     link: 'https://www.github.com/vectornguyen76',     name: 'GitHub'}
+- {icon: 'linkedin',   link: 'https://www.linkedin.com/in/vectornguyen76', name: 'LinkedIn'}
+- {icon: 'facebook',     link: 'https://www.facebook.com/vectornguyen76',     name: 'Facebook'}
+- {icon: 'twitter',    link: 'https://twitter.com/vectornguyen76',      name: 'Twitter'}
+
+# - {icon: 'envelope',   link: 'mailto:vectornguyen76@gmail.com', name: 'Email'}
+#- {icon: 'rss-square', link: '/feed.xml'}
+# - {icon: 'rss-square', link: '/rss-feed.xml'}
+
+# Customize site text
+pagination:
+  next_page: 'Newer'
+  previous_page: 'Older'
+
+#sharing_button_prompt: 'Feel free to share!'
+
+related_posts: 'You may also enjoy:'
+
+post_date_prefix: 'Written on'
