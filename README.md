@@ -15,25 +15,27 @@ To run this portfolio locally:
 
 1. **Install Jekyll:**
    Make sure you have Ruby installed, then run:
+
    ```bash
    gem install bundler jekyll
    ```
-
 2. **Clone the Repository:**
+
    ```bash
    git clone https://github.com/vectornguyen76/vectornguyen76.github.io.git
    cd vectornguyen76.github.io
    ```
-
 3. **Install Dependencies:**
+
    ```bash
    bundle install
    ```
-
 4. **Run the Development Server:**
+
    ```bash
    bundle exec jekyll serve
    ```
+
    The site will be available at `http://localhost:4000`.
 
 ## Customization
