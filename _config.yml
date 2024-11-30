@@ -10,8 +10,9 @@
 #   sort_field: 'date'
 #   sort_reverse: true
 
-url: https://vectornguyen.com    # disable this when run local
-#baseurl: /vectornguyen # disable this for vectornguyen.com
+# Comment out or remove the production URL
+# url: https://vectornguyen.com    
+# baseurl: ""
 
 # jekyll-paginate configuration
 paginate:            5

@@ -2,57 +2,91 @@
 
 Welcome to my personal portfolio! This website showcases my projects, skills, and experiences as a software developer. It's built using Jekyll and hosted on GitHub Pages.
 
-## Features
+## Quick Start
 
-- Clean and responsive design
-- Project showcase with detailed descriptions
-- Blog section for sharing thoughts and experiences
-- Easy navigation and user-friendly interface
+1. **Install Prerequisites**
+   - Ruby >= 2.7.0 (with DevKit on Windows)
+   - RubyGems
+   - Git
 
-## Local Development
-
-To run this portfolio locally:
-
-1. **Install Jekyll:**
-   Make sure you have Ruby installed, then run:
-
+2. **Install Jekyll and Dependencies**
    ```bash
-   gem install bundler jekyll
-   ```
-2. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/vectornguyen76/vectornguyen76.github.io.git
-   cd vectornguyen76.github.io
-   ```
-3. **Install Dependencies:**
-
-   ```bash
+   gem install jekyll bundler
    bundle install
    ```
-4. **Run the Development Server:**
 
+3. **Run Development Server**
    ```bash
    bundle exec jekyll serve
    ```
+   Visit `http://localhost:4000` in your browser
 
-   The site will be available at `http://localhost:4000`.
+## Features
 
-## Customization
+- Clean and responsive design
+- Project showcase
+- Blog section
+- Easy navigation
 
-- **_config.yml**: Update this file with your personal information and site settings.
-- **_posts/**: Add or edit blog posts in this directory.
-- **_layouts/**: Customize the layout templates if needed.
-- **assets/**: Add images, CSS, and other static files here.
+## Development Guide
 
-## Deployment
+### macOS Setup
 
-This site is automatically deployed to GitHub Pages when changes are pushed to the master branch. No additional setup is required.
+1. Install Ruby using Homebrew:
+   ```bash
+   brew install ruby
+   ```
+
+2. Add Ruby to your path (add to ~/.zshrc or ~/.bash_profile):
+   ```bash
+   export PATH="/usr/local/opt/ruby/bin:$PATH"
+   ```
+
+3. Restart your terminal and verify installation:
+   ```bash
+   ruby -v
+   gem -v
+   ```
+
+### Windows Setup
+
+1. Download Ruby+Devkit from [RubyInstaller](https://rubyinstaller.org/downloads/)
+2. During installation, check "Add Ruby executables to your PATH"
+3. Verify installation:
+   ```bash
+   ruby -v
+   gem -v
+   ```
+
+### Common Issues
+
+1. **SSL Certificate Errors**
+   ```bash
+   gem install webrick
+   ```
+
+2. **Encoding Issues**
+   ```bash
+   set LANG=en_US.UTF-8
+   ```
+
+3. **Bundle Install Fails**
+   ```bash
+   del Gemfile.lock
+   bundle install
+   ```
+
+## Project Structure
+
+- **_config.yml**: Site configuration
+- **_posts/**: Blog posts
+- **_layouts/**: Layout templates
+- **assets/**: Static files (images, CSS, etc.)
 
 ## Contributing
 
-If you find any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request.
+Feel free to open issues or submit pull requests for improvements.
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is available under the [MIT License](LICENSE).
