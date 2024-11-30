@@ -87,6 +87,10 @@ Welcome to my personal portfolio! This website showcases my projects, skills, an
 
 Feel free to open issues or submit pull requests for improvements.
 
+## Credits
+
+- [Huyen Nguyen's Theme](https://github.com/huyen-nguyen/huyen-nguyen.github.io)
+
 ## License
 
 This project is available under the [MIT License](LICENSE).
