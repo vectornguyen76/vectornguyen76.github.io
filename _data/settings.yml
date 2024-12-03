@@ -8,7 +8,7 @@ google-ID: ""
 
 menu:
   - { name: "About", url: "about/" }
-  - { name: "Blog", url: "blog/" }
+# - { name: "Blog", url: "blog/" }
 # - {name: 'CV', url: 'docs/CV_NguyenVanPhuoc.pdf'}
 # - {name: 'Contact', url: 'contact.html'}
 
