@@ -1,0 +1,61 @@
+---
+layout: page
+title: Updates
+permalink: /updates/
+---
+
+<div class="row updateSection">
+	<div class="col-sm-3 dateInUpdate"><i>April 2024</i></div>
+	<div class="col-sm-9">
+		Moved to Ho Chi Minh city and work as <b>AI Engineer</b> at <b>AI Center - FPT Software</b>, focusing on LLMs, multi-agent systems, and RAG! 🚀
+	</div>
+</div>
+
+<div class="row updateSection">
+	<div class="col-sm-3 dateInUpdate"><i>January 2023</i></div>
+	<div class="col-sm-9">
+		Received the <b>Most Valuable Player 2022</b> award at FPT Software for outstanding contributions in AI development! 🏆
+	</div>
+</div>
+
+<div class="row updateSection">
+	<div class="col-sm-3 dateInUpdate"><i>September 2022</i></div>
+	<div class="col-sm-9">
+		Won <a href="https://vnexpress.net/thang-giai-250-trieu-dong-nho-mo-hinh-ai-thong-minh-4509744.html" target="_blank"><b>Second Prize</b></a> in the Quy Nhon AI Hackathon 2022, demonstrating innovative solutions in AI applications! 🥈
+	</div>
+</div>
+
+<div class="row updateSection">
+	<div class="col-sm-3 dateInUpdate"><i>June 2022</i></div>
+	<div class="col-sm-9">
+		Moved to Quy Nhon and started journey as <b>AI Engineer</b> at <b>FPT Software Quy Nhon</b>, receiving AI training at <b>Central Talent Academy (CTA)</b>! 🌊
+	</div>
+</div>
+
+<div class="row updateSection">
+	<div class="col-sm-3 dateInUpdate"><i>June 2022</i></div>
+	<div class="col-sm-9">
+		Achieved <b>First Prize</b> in Defend Graduation Project at HCMUTE, showcasing excellence in Mechatronics Engineering! 🎓
+	</div>
+</div>
+
+<div class="row updateSection">
+	<div class="col-sm-3 dateInUpdate"><i>Jan 2022 - Jun 2022</i></div>
+	<div class="col-sm-9">
+		Joined <b>Hao Phuong Corp</b> as a <b>Back End Engineer</b>, working on smart Farm management solutions! 💻
+	</div>
+</div>
+
+<div class="row updateSection">
+	<div class="col-sm-3 dateInUpdate"><i>June 2021</i></div>
+	<div class="col-sm-9">
+		Started learning <b>Artificial Intelligence</b> and building AI projects, beginning an exciting journey into machine learning and deep learning! 🤖
+	</div>
+</div>
+
+<div class="row updateSection">
+	<div class="col-sm-3 dateInUpdate"><i>September 2018</i></div>
+	<div class="col-sm-9">
+		Started Mechatronics Engineering journey at <b>Ho Chi Minh City University of Technology and Education (HCMUTE)</b>! 🎓
+	</div>
+</div>
