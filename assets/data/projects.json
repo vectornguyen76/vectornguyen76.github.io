@@ -1,39 +1,39 @@
 [
-    {
-        "id": 1,
-        "title": "Search Engine System",
-        "description": [
-            "- Architected and developed a scalable microservices system handling data from 100,000 Shopee products, demonstrating expertise in large-scale data processing and system design.",
-            "- Implemented an Image Search Engine using asynchronous programming, gRPC, Vector Database, TensorRT, and Dynamic Batching, achieving 200 RPS with 100ms p95 latency.",
-            "- Engineered Full-text Search and Autocomplete functionality using Elastic Search with custom scoring scripts, improving search relevancy by 35%.",
-            "- Established continuous integration and deployment (CI/CD) using Docker, GitHub Actions, Ansible and CloudFormation. Utilized Helm Charts to deploy the project on EKS in AWS."
-        ],
-        "image": "assets/img/projects/image-search-demo.gif",
-        "github": "https://github.com/vectornguyen76/search-engine-system",
-        "demo": "https://search.vectornguyen.com",
-        "date": "Dec 2023"
-    },
-    {
-        "id": 2,
-        "title": "Face Recognition System",
-        "description": [
-            "- Developed a real-time face recognition system using One-Shot Learning, enabling accurate identification and authentication for multiple users simultaneously. This approach significantly reduced the need for extensive training data while maintaining high recognition accuracy.",
-            "- Engineered a scalable face detection, tracking, and recognition pipeline optimized for high performance. Utilized Redis Streams for efficient data streaming, Vector Database for rapid similarity search, and Triton Server for serving deep learning models. Achieved scalability with the system supporting 200 requests per second (RPS) for face detection and 100 RPS for face recognition."
-        ],
-        "image": "assets/img/projects/face-recognition.gif",
-        "github": "https://github.com/vectornguyen76/face-recognition",
-        "date": "Sep 2023"
-    },
-    {
-        "id": 3,
-        "title": "Resume Ranking",
-        "description": [
-            "- Innovated a resume ranking system leveraging the advanced language processing capabilities of large language models.",
-            "- Utilized prompt engineering to extract key insights from resumes and create accurate rankings."
-        ],
-        "image": "assets/img/projects/resume-ranking.png",
-        "github": "https://github.com/vectornguyen76/resume-ranking",
-        "demo": "https://youtu.be/Gd178Pd48Q4",
-        "date": "Apr 2023"
-    }
+  {
+    "id": 1,
+    "title": "Search Engine System",
+    "description": [
+      "- Architected and developed a scalable microservices system handling data from 100,000 Shopee products, demonstrating expertise in large-scale data processing and system design.",
+      "- Implemented an Image Search Engine using asynchronous programming, gRPC, Vector Database, TensorRT, and Dynamic Batching, achieving 200 RPS with 100ms p95 latency.",
+      "- Engineered Full-text Search and Autocomplete functionality using Elastic Search with custom scoring scripts, improving search relevancy by 35%.",
+      "- Established continuous integration and deployment (CI/CD) using Docker, GitHub Actions, Ansible and CloudFormation. Utilized Helm Charts to deploy the project on EKS in AWS."
+    ],
+    "image": "assets/img/projects/image-search-demo.gif",
+    "github": "https://github.com/vectornguyen76/search-engine-system",
+    "demo": "https://search.vectornguyen.com",
+    "date": "Dec 2023"
+  },
+  {
+    "id": 2,
+    "title": "Face Recognition System",
+    "description": [
+      "- Developed a real-time face recognition system using One-Shot Learning, enabling accurate identification and authentication for multiple users simultaneously. This approach significantly reduced the need for extensive training data while maintaining high recognition accuracy.",
+      "- Engineered a scalable face detection, tracking, and recognition pipeline optimized for high performance. Utilized Redis Streams for efficient data streaming, Vector Database for rapid similarity search, and Triton Server for serving deep learning models. Achieved scalability with the system supporting 200 requests per second (RPS) for face detection and 100 RPS for face recognition."
+    ],
+    "image": "assets/img/projects/face-recognition.gif",
+    "github": "https://github.com/vectornguyen76/face-recognition",
+    "date": "Sep 2023"
+  },
+  {
+    "id": 3,
+    "title": "Resume Ranking",
+    "description": [
+      "- Innovated a resume ranking system leveraging the advanced language processing capabilities of large language models.",
+      "- Utilized prompt engineering to extract key insights from resumes and create accurate rankings."
+    ],
+    "image": "assets/img/projects/resume-ranking.png",
+    "github": "https://github.com/vectornguyen76/resume-ranking",
+    "demo": "https://youtu.be/Gd178Pd48Q4",
+    "date": "Apr 2023"
+  }
 ]

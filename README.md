@@ -5,11 +5,13 @@ Welcome to my personal portfolio! This website showcases my projects, skills, an
 ## Quick Start
 
 1. **Install Prerequisites**
+
    - Ruby >= 2.7.0 (with DevKit on Windows)
    - RubyGems
    - Git
 
 2. **Install Jekyll and Dependencies**
+
    ```bash
    gem install jekyll bundler
    bundle install
@@ -33,11 +35,13 @@ Welcome to my personal portfolio! This website showcases my projects, skills, an
 ### macOS Setup
 
 1. Install Ruby using Homebrew:
+
    ```bash
    brew install ruby
    ```
 
 2. Add Ruby to your path (add to ~/.zshrc or ~/.bash_profile):
+
    ```bash
    export PATH="/usr/local/opt/ruby/bin:$PATH"
    ```
@@ -61,11 +65,13 @@ Welcome to my personal portfolio! This website showcases my projects, skills, an
 ### Common Issues
 
 1. **SSL Certificate Errors**
+
    ```bash
    gem install webrick
    ```
 
 2. **Encoding Issues**
+
    ```bash
    set LANG=en_US.UTF-8
    ```
@@ -78,9 +84,9 @@ Welcome to my personal portfolio! This website showcases my projects, skills, an
 
 ## Project Structure
 
-- **_config.yml**: Site configuration
-- **_posts/**: Blog posts
-- **_layouts/**: Layout templates
+- **\_config.yml**: Site configuration
+- **\_posts/**: Blog posts
+- **\_layouts/**: Layout templates
 - **assets/**: Static files (images, CSS, etc.)
 
 ## Contributing

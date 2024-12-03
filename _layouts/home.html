@@ -5,136 +5,198 @@ layout: default
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="{{ site.url }}{{ site.baseurl }}/assets/js/projects.js"></script>
 <script>
-	function soundName() {
-		var x = document.getElementById("myDIV");
-		if (x.style.display === "flex") {
-			x.style.display = "none";
-		} else {
-			x.style.display = "flex";
-		}
-	}
+  function soundName() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  }
 </script>
 
 <div class="row">
-	<div class="col-sm-3">
-		<div class="info-box">
-			<img class="img-intro" src="{{ site.url }}{{ site.baseurl }}/assets/img/vector.jpeg"/>
-			<p class="intro-text">
-				<b>AIC FPT Software</b><br>
-				<i>AI Engineer</i><br>
-				<span class="social-container">{% include social-icons-header.html %}</span>
-			</p>
-		</div>
-	</div>
-	<article class="col-sm-9">
-		<div class="welcome first-section">
-			<h4>Welcome!</h4>
+  <div class="col-sm-3">
+    <div class="info-box">
+      <img
+        class="img-intro"
+        src="{{ site.url }}{{ site.baseurl }}/assets/img/vector.jpeg"
+      />
+      <p class="intro-text">
+        <b>AIC FPT Software</b><br />
+        <i>AI Engineer</i><br />
+        <span class="social-container"
+          >{% include social-icons-header.html %}</span
+        >
+      </p>
+    </div>
+  </div>
+  <article class="col-sm-9">
+    <div class="welcome first-section">
+      <h4>Welcome!</h4>
 
-			<p>Hi, I'm Vector Nguyen, an AI Engineer with a passion for building practical and efficient Machine Learning systems. My journey in AI began during my Mechatronics Engineering studies at HCMUTE. After graduating, I started in software development before moving into AI at FPT Software Quy Nhon, where I worked on Semantic Search for Computer Vision and NLP, while learning MLOps.</p>
+      <p>
+        Hi, I'm Vector Nguyen, an AI Engineer with a passion for building
+        practical and efficient Machine Learning systems. My journey in AI began
+        during my Mechatronics Engineering studies at HCMUTE. After graduating,
+        I started in software development before moving into AI at FPT Software
+        Quy Nhon, where I worked on Semantic Search for Computer Vision and NLP,
+        while learning MLOps.
+      </p>
 
-			<p>After two years, I returned to Ho Chi Minh city to join FPT's AI Center, focusing on Large Language Models (LLMs), multi-agent systems, and Retrieval-Augmented Generation (RAG). I have experience building advanced chatbots, AI systems, and multilingual solutions for international clients.</p>
+      <p>
+        After two years, I returned to Ho Chi Minh city to join FPT's AI Center,
+        focusing on Large Language Models (LLMs), multi-agent systems, and
+        Retrieval-Augmented Generation (RAG). I have experience building
+        advanced chatbots, AI systems, and multilingual solutions for
+        international clients.
+      </p>
 
-			<p>I also work with microservices, cloud technologies, and DevOps to create scalable AI applications. In my side projects, I've developed a large-scale search engine and a real-time face recognition system, solving challenges in data processing and computer vision.</p>
-			
-			<p>Beyond my work, I'm passionate about building AI applications on GitHub. I'm always excited about the next public project release, eager to collaborate and share new innovations with the world.</p>
+      <p>
+        I also work with microservices, cloud technologies, and DevOps to create
+        scalable AI applications. In my side projects, I've developed a
+        large-scale search engine and a real-time face recognition system,
+        solving challenges in data processing and computer vision.
+      </p>
 
-			<div id="myDIV" style="display: none">
-				<embed width='550' height='180' src='https://embed.howtopronounce.com/classic/en/vietnamese/Huy%E1%BB%81n/29592386'>
-			</div>
-		</div>
-	</article>
+      <p>
+        Beyond my work, I'm passionate about building AI applications on GitHub.
+        I'm always excited about the next public project release, eager to
+        collaborate and share new innovations with the world.
+      </p>
+
+      <div id="myDIV" style="display: none">
+        <embed
+          width="550"
+          height="180"
+          src="https://embed.howtopronounce.com/classic/en/vietnamese/Huy%E1%BB%81n/29592386"
+        />
+      </div>
+    </div>
+  </article>
 </div>
 
 <div class="row">
-	<div class="col-sm-3"></div>
-	<article class="col-sm-9" style="margin-top: 2rem">
-		<div class="updates">
-			<h4>Updates</h4>
-			<div style="color: rgba(79,80,80,0.65); padding-bottom: 0.5rem">
-				A full list of <a href="{{ site.url }}{{ site.baseurl }}/updates/" target="_blank">Updates <i class="fas fa-external-link-alt"></i></a>
-			</div>
-		</div>
-	</article>
+  <div class="col-sm-3"></div>
+  <article class="col-sm-9" style="margin-top: 2rem">
+    <div class="updates">
+      <h4>Updates</h4>
+      <div style="color: rgba(79, 80, 80, 0.65); padding-bottom: 0.5rem">
+        A full list of
+        <a href="{{ site.url }}{{ site.baseurl }}/updates/" target="_blank"
+          >Updates <i class="fas fa-external-link-alt"></i
+        ></a>
+      </div>
+    </div>
+  </article>
 
-		<div class="update-container">
-			<div class="scrollable">
-				<div class="row updateSection">
-					<div class="col-sm-3 dateInUpdate" style="text-align: right; display: inline; justify-content: flex-end;">
-						<img src="../assets/img/new-tag.png" alt="new icon" style="height: 25px; margin-right: 10px;" />
-						<i>April 2024</i>
-					</div>
-					<div class="col-sm-9">
-						Moved to Ho Chi Minh city and work as <b>AI Engineer</b> at <b>AI Center - FPT Software</b>, focusing on LLMs, multi-agent systems, and RAG! 🚀
-					</div>
-				</div>
+  <div class="update-container">
+    <div class="scrollable">
+      <div class="row updateSection">
+        <div
+          class="col-sm-3 dateInUpdate"
+          style="text-align: right; display: inline; justify-content: flex-end"
+        >
+          <img
+            src="../assets/img/new-tag.png"
+            alt="new icon"
+            style="height: 25px; margin-right: 10px"
+          />
+          <i>April 2024</i>
+        </div>
+        <div class="col-sm-9">
+          Moved to Ho Chi Minh city and work as <b>AI Engineer</b> at
+          <b>AI Center - FPT Software</b>, focusing on LLMs, multi-agent
+          systems, and RAG! 🚀
+        </div>
+      </div>
 
-				<div class="row updateSection">
-					<div class="col-sm-3 dateInUpdate"><i>January 2023</i></div>
-					<div class="col-sm-9">
-						Received the <b>Most Valuable Player 2022</b> award at FPT Software! 🏆
-					</div>
-				</div>
+      <div class="row updateSection">
+        <div class="col-sm-3 dateInUpdate"><i>January 2023</i></div>
+        <div class="col-sm-9">
+          Received the <b>Most Valuable Player 2022</b> award at FPT Software!
+          🏆
+        </div>
+      </div>
 
-				<div class="row updateSection">
-					<div class="col-sm-3 dateInUpdate"><i>September 2022</i></div>
-					<div class="col-sm-9">
-						Won <a href="https://vnexpress.net/thang-giai-250-trieu-dong-nho-mo-hinh-ai-thong-minh-4509744.html" target="_blank"><b>Second Prize</b></a> in the Quy Nhon AI Hackathon 2022, demonstrating innovative solutions in AI applications! 🥈
-					</div>
-				</div>
+      <div class="row updateSection">
+        <div class="col-sm-3 dateInUpdate"><i>September 2022</i></div>
+        <div class="col-sm-9">
+          Won
+          <a
+            href="https://vnexpress.net/thang-giai-250-trieu-dong-nho-mo-hinh-ai-thong-minh-4509744.html"
+            target="_blank"
+            ><b>Second Prize</b></a
+          >
+          in the Quy Nhon AI Hackathon 2022, demonstrating innovative solutions
+          in AI applications! 🥈
+        </div>
+      </div>
 
-				<div class="row updateSection">
-					<div class="col-sm-3 dateInUpdate"><i>June 2022</i></div>
-					<div class="col-sm-9">
-						Moved to Quy Nhon and started journey as <b>AI Engineer</b> at <b>FPT Software Quy Nhon</b>, receiving AI training at <b>Central Talent Academy (CTA)</b>! 🌊
-					</div>
-				</div>
+      <div class="row updateSection">
+        <div class="col-sm-3 dateInUpdate"><i>June 2022</i></div>
+        <div class="col-sm-9">
+          Moved to Quy Nhon and started journey as <b>AI Engineer</b> at
+          <b>FPT Software Quy Nhon</b>, receiving AI training at
+          <b>Central Talent Academy (CTA)</b>! 🌊
+        </div>
+      </div>
 
-				<div class="row updateSection">
-					<div class="col-sm-3 dateInUpdate"><i>June 2022</i></div>
-					<div class="col-sm-9">
-						Achieved <b>First Prize</b> in Defend Graduation Project at HCMUTE, showcasing excellence in Mechatronics Engineering! 🎓
-					</div>
-				</div>
+      <div class="row updateSection">
+        <div class="col-sm-3 dateInUpdate"><i>June 2022</i></div>
+        <div class="col-sm-9">
+          Achieved <b>First Prize</b> in Defend Graduation Project at HCMUTE,
+          showcasing excellence in Mechatronics Engineering! 🎓
+        </div>
+      </div>
 
-				<div class="row updateSection">
-					<div class="col-sm-3 dateInUpdate"><i>January 2022</i></div>
-					<div class="col-sm-9">
-						Joined <b>Hao Phuong Corp</b> as a <b>Back End Engineer</b>, working on smart Farm management solutions! 💻
-					</div>
-				</div>
+      <div class="row updateSection">
+        <div class="col-sm-3 dateInUpdate"><i>January 2022</i></div>
+        <div class="col-sm-9">
+          Joined <b>Hao Phuong Corp</b> as a <b>Back End Engineer</b>, working
+          on smart Farm management solutions! 💻
+        </div>
+      </div>
 
-				<div class="row updateSection">
-					<div class="col-sm-3 dateInUpdate"><i>June 2021</i></div>
-					<div class="col-sm-9">
-						Started learning <b>Artificial Intelligence</b> and building AI projects, beginning an exciting journey into machine learning and deep learning! 🤖
-					</div>
-				</div>
+      <div class="row updateSection">
+        <div class="col-sm-3 dateInUpdate"><i>June 2021</i></div>
+        <div class="col-sm-9">
+          Started learning <b>Artificial Intelligence</b> and building AI
+          projects, beginning an exciting journey into machine learning and deep
+          learning! 🤖
+        </div>
+      </div>
 
-				<div class="row updateSection">
-					<div class="col-sm-3 dateInUpdate"><i>September 2018</i></div>
-					<div class="col-sm-9">
-						Started Mechatronics Engineering journey at <b>Ho Chi Minh City University of Technology and Education (HCMUTE)</b>! 🎓
-					</div>
-				</div>
-			</div>
-		</div>
+      <div class="row updateSection">
+        <div class="col-sm-3 dateInUpdate"><i>September 2018</i></div>
+        <div class="col-sm-9">
+          Started Mechatronics Engineering journey at
+          <b>Ho Chi Minh City University of Technology and Education (HCMUTE)</b
+          >! 🎓
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="row">
-	<div class="col-sm-3"></div>
-	<article class="col-sm-9">
-		<div class="publication section">
-			<h4>Side Projects</h4>
-			<div style="color: rgba(79,80,80,0.65); padding-bottom: 0.5rem">
-				A full list of side projects available at <a href="https://github.com/vectornguyen76" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
-			</div>
-		</div>
-	</article>
+  <div class="col-sm-3"></div>
+  <article class="col-sm-9">
+    <div class="publication section">
+      <h4>Side Projects</h4>
+      <div style="color: rgba(79, 80, 80, 0.65); padding-bottom: 0.5rem">
+        A full list of side projects available at
+        <a href="https://github.com/vectornguyen76" target="_blank"
+          >GitHub <i class="fas fa-external-link-alt"></i
+        ></a>
+      </div>
+    </div>
+  </article>
 </div>
 
 <div class="row">
-	<div id="projectsContainer"></div>
-	<script>
-		displayProjects();
-	</script>
+  <div id="projectsContainer"></div>
+  <script>
+    displayProjects();
+  </script>
 </div>
