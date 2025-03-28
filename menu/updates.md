@@ -5,9 +5,16 @@ permalink: /updates/
 ---
 
 <div class="row updateSection">
+	<div class="col-sm-3 dateInUpdate"><i>December 2024</i></div>
+	<div class="col-sm-9">
+		Started new journey at <b>MoMo</b> as an <b>AI Engineer</b>, developing Personal Assistant solutions leveraging multi-agent architecture, hybrid search tools, and memory system! 🚀
+	</div>
+</div>
+
+<div class="row updateSection">
 	<div class="col-sm-3 dateInUpdate"><i>April 2024</i></div>
 	<div class="col-sm-9">
-		Moved to Ho Chi Minh city and work as <b>AI Engineer</b> at <b>AI Center - FPT Software</b>, focusing on LLMs, multi-agent systems, and RAG! 🚀
+		Moved to Ho Chi Minh city and work as <b>AI Engineer</b> at <b>AI Center - FPT Software</b>, focusing on LLMs, multi-agent architecture, and multimodal RAG! 🚀
 	</div>
 </div>
 

@@ -25,7 +25,7 @@ plugins: [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title: "Vector Nguyen"
-description: "focusing on LLMs and MLOps"
+description: "focusing on LLMs, RAG and LLMOps"
 author: "Vector"
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
