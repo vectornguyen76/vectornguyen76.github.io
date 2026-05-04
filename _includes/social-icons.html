@@ -3,8 +3,8 @@
 <a href="{{ item.link }}" target="_blank" class="social-icons"
   ><i class="ai ai-{{ item.icon }}-square" aria-hidden="true"></i
 ></a>
-{% else %}
+{% else %} {% assign icon_prefix = item.prefix | default: "fab" %}
 <a href="{{ item.link }}" target="_blank" class="social-icons"
-  ><i class="fab fa-{{ item.icon }}" aria-hidden="true"></i
+  ><i class="{{ icon_prefix }} fa-{{ item.icon }}" aria-hidden="true"></i
 ></a>
 {% endif %} {% endfor %}

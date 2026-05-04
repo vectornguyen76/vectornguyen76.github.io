@@ -9,7 +9,6 @@ google-ID: ""
 menu:
   - { name: "About", url: "about/" }
 # - { name: "Blog", url: "blog/" }
-# - {name: 'CV', url: 'docs/CV_NguyenVanPhuoc.pdf'}
 # - {name: 'Contact', url: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
@@ -30,12 +29,11 @@ social:
       name: "Facebook",
     }
   - {
-      icon: "twitter",
-      link: "https://twitter.com/vectornguyen76",
-      name: "Twitter",
+      icon: "envelope",
+      prefix: "fas",
+      link: "mailto:vectornguyen76@gmail.com",
+      name: "Email",
     }
-
-# - {icon: 'envelope',   link: 'mailto:vectornguyen76@gmail.com', name: 'Email'}
 #- {icon: 'rss-square', link: '/feed.xml'}
 # - {icon: 'rss-square', link: '/rss-feed.xml'}
 

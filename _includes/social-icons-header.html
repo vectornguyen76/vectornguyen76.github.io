@@ -7,9 +7,12 @@
       aria-hidden="true"
     ></i></a
 ></span>
-{% else %}
+{% else %} {% assign icon_prefix = item.prefix | default: "fab" %}
 <span class="social-span">
   <a href="{{ item.link }}" target="_blank" class="social-icons-header"
-    >{{ item.name}}<i class="fab fa-{{ item.icon }}" aria-hidden="true"></i></a
+    >{{ item.name}}<i
+      class="{{ icon_prefix }} fa-{{ item.icon }}"
+      aria-hidden="true"
+    ></i></a
 ></span>
 {% endif %} {% endfor %}

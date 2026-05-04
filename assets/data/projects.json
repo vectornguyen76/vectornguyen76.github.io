@@ -17,11 +17,11 @@
     "id": 2,
     "title": "Face Recognition System",
     "description": [
-      "- Developed a real-time face recognition system using One-Shot Learning, enabling accurate identification and authentication for multiple users simultaneously. This approach significantly reduced the need for extensive training data while maintaining high recognition accuracy.",
-      "- Engineered a scalable face detection, tracking, and recognition pipeline optimized for high performance. Utilized Redis Streams for efficient data streaming, Vector Database for rapid similarity search, and Triton Server for serving deep learning models. Achieved scalability with the system supporting 200 requests per second (RPS) for face detection and 100 RPS for face recognition."
+      "- Built a real-time face recognition system with a microservices architecture (6 Dockerized services): SCRFD detection, ByteTrack multi-object tracking, and ArcFace embedding extraction — all served via NVIDIA Triton Inference Server with GPU acceleration.",
+      "- Implemented few-shot face enrollment and recognition using ArcFace embeddings with Qdrant vector similarity search, and Redis Streams for inter-service frame/bbox streaming. Served via FastAPI with MJPEG live video feed."
     ],
     "image": "assets/img/projects/face-recognition.gif",
-    "github": "https://github.com/vectornguyen76/face-recognition",
+    "github": "https://github.com/vectornguyen76/face-recognition-system",
     "date": "Sep 2023"
   },
   {

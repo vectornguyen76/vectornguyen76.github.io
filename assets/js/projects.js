@@ -10,65 +10,45 @@ async function loadProjects() {
 
 async function displayProjects() {
   const projects = await loadProjects();
-  const mainContainer = d3.select("#projectsContainer");
+  const container = document.getElementById("projectsContainer");
 
-  // Create project cards
-  const projectCards = mainContainer
-    .selectAll("div.project-card")
-    .data(projects)
-    .enter()
-    .append("div")
-    .attr(
-      "class",
-      (d) =>
-        `project-card${d.featured ? " featured" : ""}${d.mlops ? " mlops" : ""}`
-    );
+  projects.forEach((project) => {
+    const classes = ["project-card"];
+    if (project.featured) classes.push("featured");
+    if (project.mlops) classes.push("mlops");
 
-  // Add project images
-  const imageDiv = projectCards
-    .append("div")
-    .attr("class", "project-image col-sm-3");
+    const demoLink = project.demo
+      ? `<a href="${project.demo}" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>`
+      : "";
 
-  imageDiv
-    .append("img")
-    .attr("src", (d) => d.image)
-    .attr("alt", (d) => d.title);
-
-  // Add project details
-  const detailsDiv = projectCards
-    .append("div")
-    .attr("class", "project-details col-sm-9");
-
-  detailsDiv
-    .append("h5")
-    .append("a")
-    .attr("href", (d) => d.github)
-    .attr("target", "_blank")
-    .text((d) => d.title);
-
-  // Create description div
-  const descriptionDiv = detailsDiv
-    .append("div")
-    .attr("class", "project-description")
-    .html((d) => d.description.join("<br>"));
-
-  // Add project links
-  const linksDiv = detailsDiv.append("div").attr("class", "project-links");
-
-  linksDiv
-    .append("a")
-    .attr("href", (d) => d.github)
-    .attr("target", "_blank")
-    .html('<i class="fab fa-github"></i> Code');
-
-  // Add demo link if available
-  linksDiv.each(function (d) {
-    if (d.demo) {
-      d3.select(this)
-        .append("a")
-        .attr("href", d.demo)
-        .attr("target", "_blank")
-        .html('<i class="fas fa-external-link-alt"></i> Demo');
-    }
+    const card = document.createElement("div");
+    card.className = classes.join(" ");
+    card.innerHTML = `
+      <div class="project-image col-sm-3">
+        <img src="${project.image}" alt="${project.title}" />
+      </div>
+      <div class="project-details col-sm-9">
+        <div style="display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap;">
+          <h5 style="margin: 0;">
+            <a href="${project.github}" target="_blank">${project.title}</a>
+          </h5>
+          ${
+            project.date
+              ? `<span style="font-size: 0.85rem; color: #888; font-style: italic;">${project.date}</span>`
+              : ""
+          }
+        </div>
+        <div class="project-description">${project.description.join(
+          "<br>"
+        )}</div>
+        <div class="project-links">
+          <a href="${
+            project.github
+          }" target="_blank"><i class="fab fa-github"></i> Code</a>
+          ${demoLink}
+        </div>
+      </div>
+    `;
+    container.appendChild(card);
   });
 }
