@@ -5,9 +5,19 @@ permalink: /updates/
 ---
 
 <div class="row updateSection">
+	<div class="col-sm-3 dateInUpdate">
+		<img src="../assets/img/new-tag.png" alt="new icon" style="height: 25px; margin-right: 10px" />
+		<i>September 2025</i>
+	</div>
+	<div class="col-sm-9">
+		Won <b>Champions of Hacking Week</b> at <b>Tech Day MoMo 2025</b>! 🏆
+	</div>
+</div>
+
+<div class="row updateSection">
 	<div class="col-sm-3 dateInUpdate"><i>December 2024</i></div>
 	<div class="col-sm-9">
-		Started new journey at <b>MoMo</b> as an <b>AI Engineer</b>, developing Personal Assistant solutions leveraging multi-agent architecture, hybrid search tools, and memory system! 🚀
+		Joined <b>MoMo</b> as an <b>AI Engineer</b> and built <b>Tro Ly An Choi</b> from zero — a multi-agent AI chat assistant (1 orchestrator + 6 domain agents) integrated across 10+ MoMo mini-app surfaces, reaching over <b>100K monthly engaged users</b>. 🚀
 	</div>
 </div>
 
