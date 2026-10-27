@@ -1,0 +1,32 @@
+{%- comment -%}
+  Profile links from `site.social.links`, plus email from `site.author.email`.
+  Pass `compact=true` to show icons only (labels stay available to screen readers).
+{%- endcomment -%}
+{%- if include.compact -%}{%- assign label_class = "visually-hidden" -%}{%- else -%}{%- assign label_class = "" -%}{%- endif -%}
+<ul class="social{% if include.compact %} social--compact{% endif %}">
+  {%- for url in site.social.links -%}
+    {%- if url contains "github.com" -%}
+      {%- assign social_icon = "github" -%}{%- assign social_label = "GitHub" -%}
+    {%- elsif url contains "linkedin.com" -%}
+      {%- assign social_icon = "linkedin" -%}{%- assign social_label = "LinkedIn" -%}
+    {%- elsif url contains "facebook.com" -%}
+      {%- assign social_icon = "facebook" -%}{%- assign social_label = "Facebook" -%}
+    {%- else -%}
+      {%- assign social_icon = "external" -%}{%- assign social_label = url | split: "//" | last | split: "/" | first -%}
+    {%- endif %}
+  <li>
+    <a class="social__link" href="{{ url }}" rel="me noopener" target="_blank">
+      {%- include icon.html name=social_icon -%}
+      <span class="{{ label_class }}">{{ social_label }}</span>
+    </a>
+  </li>
+  {%- endfor -%}
+  {%- if site.author.email %}
+  <li>
+    <a class="social__link" href="mailto:{{ site.author.email }}">
+      {%- include icon.html name="mail" -%}
+      <span class="{{ label_class }}">Email</span>
+    </a>
+  </li>
+  {%- endif %}
+</ul>

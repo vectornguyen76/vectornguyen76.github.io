@@ -1,0 +1,19 @@
+<aside class="profile" aria-label="Profile">
+  <picture>
+    <source type="image/webp" srcset="{{ '/assets/img/avatar-240.webp' | relative_url }} 240w, {{ '/assets/img/avatar-480.webp' | relative_url }} 480w" sizes="(min-width: 880px) 216px, 112px">
+    <img class="profile__photo" src="{{ '/assets/img/avatar-480.jpg' | relative_url }}" alt="Portrait of {{ site.author.name }}" width="480" height="480" fetchpriority="high">
+  </picture>
+  <div class="profile__body">
+    <ul class="profile__facts">
+      <li>
+        {%- include icon.html name="briefcase" -%}
+        <span>{{ site.author.role }} at <a href="{{ site.author.company_url }}" target="_blank" rel="noopener">{{ site.author.company }}</a></span>
+      </li>
+      <li>
+        {%- include icon.html name="map-pin" -%}
+        <span>{{ site.author.location }}</span>
+      </li>
+    </ul>
+    {% include social-links.html %}
+  </div>
+</aside>

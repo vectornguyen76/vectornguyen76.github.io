@@ -1,0 +1,43 @@
+# Newest first. `text` is Markdown. The home page shows the first few entries;
+# /updates/ shows all of them.
+
+- date: 2025-09-01
+  text: Won **Champions of Hacking Week** at **Tech Day MoMo 2025**.
+
+- date: 2024-12-01
+  text: >-
+    Joined **MoMo** as an AI Engineer and built **Tro Ly An Choi** from zero —
+    a multi-agent chat assistant (1 orchestrator + 6 domain agents) integrated
+    across 10+ MoMo mini-app surfaces, reaching over **100K monthly engaged users**.
+
+- date: 2024-04-01
+  text: >-
+    Moved to Ho Chi Minh City to join **FPT Software AI Center** as an AI
+    Engineer, working on LLMs, multi-agent architectures and multimodal RAG.
+
+- date: 2023-01-01
+  text: Received the **Most Valuable Player 2022** award at FPT Software.
+
+- date: 2022-09-01
+  text: >-
+    Won [**Second Prize**](https://vnexpress.net/thang-giai-250-trieu-dong-nho-mo-hinh-ai-thong-minh-4509744.html)
+    at the Quy Nhon AI Hackathon 2022.
+
+- date: 2022-06-01
+  text: >-
+    Moved to Quy Nhon to start as an AI Engineer at **FPT Software Quy Nhon**,
+    with AI training at Central Talent Academy (CTA).
+
+- date: 2022-06-01
+  text: Won **First Prize** for my graduation project defense in Mechatronics Engineering at HCMUTE.
+
+- date: 2022-01-01
+  text: Joined **Hao Phuong Corp** as a Back End Engineer, working on smart farm management.
+
+- date: 2021-06-01
+  text: Started learning AI and building my first machine learning and deep learning projects.
+
+- date: 2018-09-01
+  text: >-
+    Started Mechatronics Engineering at **Ho Chi Minh City University of
+    Technology and Education (HCMUTE)**.

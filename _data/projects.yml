@@ -1,0 +1,98 @@
+# Rendered by _includes/project-card.html.
+#
+#   title       required
+#   url         live product site (shown as the primary link)
+#   repo        source code
+#   demo        demo video
+#   period      free-form date label
+#   summary     one-sentence pitch
+#   highlights  Markdown bullet points
+#   tags        short tech labels
+#   media       { src, poster?, width, height, alt } — .mp4 renders as video
+
+building:
+  - title: Assistant Core
+    url: https://assistantcore.com
+    period: Jan 2024 – present
+    summary: >-
+      Deploy one AI assistant everywhere — web, mobile widgets, IoT devices,
+      wearables and embedded surfaces — from a single configuration, without
+      duplicating logic per channel.
+    highlights:
+      - >-
+        **Multi-provider:** 7+ AI providers (OpenAI, Anthropic, Google, xAI,
+        DeepSeek, AWS Bedrock, ElevenLabs, Soniox), switchable without reconfiguration.
+      - >-
+        **Voice pipeline:** sub-1s ASR → LLM → TTS streaming with VAD auto mode,
+        barge-in interruption and wake-word customization over WebSocket and MQTT+UDP.
+      - >-
+        **Knowledge & tools:** agentic RAG over documents, websites and databases;
+        MCP server integration; custom API tool calling.
+      - >-
+        **White-label multi-tenant:** RBAC, custom domain routing, and an admin
+        dashboard for assistant config, users, device pairing and voice quotas.
+    tags:
+      - PostgreSQL/pgvector
+      - Redis
+      - S3
+      - Langfuse
+      - Grafana
+      - TLS 1.3
+      - JWT/OAuth 2.0
+
+side:
+  - title: Search Engine System
+    repo: https://github.com/vectornguyen76/search-engine-system
+    period: Dec 2023
+    summary: Scalable image and full-text search over 100,000 Shopee products, built as microservices.
+    highlights:
+      - >-
+        Image search with async programming, gRPC, a vector database, TensorRT
+        and dynamic batching — **200 RPS at 100 ms p95 latency**.
+      - >-
+        Full-text search and autocomplete on Elasticsearch with custom scoring
+        scripts, improving relevancy by **35%**.
+      - >-
+        CI/CD with Docker, GitHub Actions, Ansible and CloudFormation; deployed
+        to AWS EKS with Helm charts.
+    tags: [gRPC, TensorRT, Elasticsearch, Vector DB, AWS EKS]
+    media:
+      src: /assets/img/projects/search-engine.mp4
+      poster: /assets/img/projects/search-engine.webp
+      width: 600
+      height: 338
+      alt: Uploading a product photo and getting visually similar Shopee products
+
+  - title: Face Recognition System
+    repo: https://github.com/vectornguyen76/face-recognition-system
+    period: Sep 2023
+    summary: Real-time face recognition across six Dockerized microservices with GPU inference.
+    highlights:
+      - >-
+        SCRFD detection, ByteTrack multi-object tracking and ArcFace embeddings,
+        all served by NVIDIA Triton Inference Server.
+      - >-
+        Few-shot enrollment with ArcFace embeddings and Qdrant similarity search;
+        Redis Streams carry frames and boxes between services.
+      - Served via FastAPI with an MJPEG live video feed.
+    tags: [Triton, ArcFace, ByteTrack, Qdrant, Redis Streams]
+    media:
+      src: /assets/img/projects/face-recognition.mp4
+      poster: /assets/img/projects/face-recognition.webp
+      width: 640
+      height: 480
+      alt: Live camera feed with a tracked, labelled face
+
+  - title: Resume Ranking
+    repo: https://github.com/vectornguyen76/resume-ranking
+    demo: https://youtu.be/Gd178Pd48Q4
+    period: Apr 2023
+    summary: Ranks resumes using the language understanding of large language models.
+    highlights:
+      - Prompt engineering extracts key insights from each resume and produces accurate rankings.
+    tags: [LLMs, Prompt engineering]
+    media:
+      src: /assets/img/projects/resume-ranking.webp
+      width: 800
+      height: 360
+      alt: "JobFit: AI-powered resume speed screening"

@@ -1,0 +1,12 @@
+{%- comment -%}
+  Dated list of updates from `_data/updates.yml`.
+  Usage: {% include timeline.html limit=5 %}  (omit `limit` to show everything)
+{%- endcomment -%}
+<ol class="timeline">
+  {%- for update in site.data.updates limit: include.limit %}
+  <li class="timeline__item">
+    <time class="timeline__date" datetime="{{ update.date | date: '%Y-%m' }}">{{ update.date | date: "%b %Y" }}</time>
+    <p class="timeline__text">{% include inline-markdown.html text=update.text %}</p>
+  </li>
+  {%- endfor %}
+</ol>

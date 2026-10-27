@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="{{ site.lang | slice: 0, 2 }}">
   {% include head.html %}
   <body>
-    <div class="container folded_corner">
-      {% include header.html %}
-      <div class="content-container">{{ content }}</div>
-      {% include footer.html %}
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    {% include header.html %}
+    <main id="main" class="site-main">
+      {{ content }}
+    </main>
+    {% include footer.html %}
   </body>
 </html>
