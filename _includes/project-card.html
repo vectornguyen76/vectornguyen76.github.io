@@ -1,0 +1,54 @@
+{%- comment -%}
+  One entry from `_data/projects.yml`. Usage: {% include project-card.html project=item %}
+  Videos ship with native controls; assets/js/main.js swaps them for
+  muted autoplay-while-visible unless the reader prefers reduced motion.
+{%- endcomment -%}
+{%- assign project = include.project -%}
+{%- assign project_href = project.url | default: project.repo -%}
+<article class="card{% if project.media %} card--media{% endif %}">
+  {%- if project.media %}
+  <div class="card__media">
+    {%- if project.media.src contains ".mp4" %}
+    <video src="{{ project.media.src | relative_url }}" poster="{{ project.media.poster | relative_url }}" width="{{ project.media.width }}" height="{{ project.media.height }}" aria-label="{{ project.media.alt }}" controls muted loop playsinline preload="none" data-autoplay></video>
+    {%- else %}
+    <img src="{{ project.media.src | relative_url }}" alt="{{ project.media.alt }}" width="{{ project.media.width }}" height="{{ project.media.height }}" loading="lazy" decoding="async">
+    {%- endif %}
+  </div>
+  {%- endif %}
+  <div class="card__body">
+    <header class="card__header">
+      <h3 class="card__title"><a href="{{ project_href }}" target="_blank" rel="noopener">{{ project.title }}</a></h3>
+      {%- if project.period %}
+      <p class="card__period">{{ project.period }}</p>
+      {%- endif %}
+    </header>
+    {%- if project.summary %}
+    <p class="card__summary">{{ project.summary }}</p>
+    {%- endif %}
+    {%- if project.highlights %}
+    <ul class="card__highlights">
+      {%- for highlight in project.highlights %}
+      <li>{% include inline-markdown.html text=highlight %}</li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+    {%- if project.tags %}
+    <ul class="tags" aria-label="Tech stack">
+      {%- for tag in project.tags %}
+      <li class="tag">{{ tag }}</li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+    <p class="card__links">
+      {%- if project.url %}
+      <a href="{{ project.url }}" target="_blank" rel="noopener">{% include icon.html name="external" %}{{ project.url | remove: "https://" | remove: "http://" }}</a>
+      {%- endif %}
+      {%- if project.repo %}
+      <a href="{{ project.repo }}" target="_blank" rel="noopener">{% include icon.html name="github" %}Source</a>
+      {%- endif %}
+      {%- if project.demo %}
+      <a href="{{ project.demo }}" target="_blank" rel="noopener">{% include icon.html name="play" %}Demo video</a>
+      {%- endif %}
+    </p>
+  </div>
+</article>

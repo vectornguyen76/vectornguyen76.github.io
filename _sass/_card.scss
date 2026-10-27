@@ -1,0 +1,123 @@
+// Project / product card. Media sits beside the text from $bp-sm up.
+
+.card {
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  box-shadow: var(--shadow);
+
+  @media (min-width: $bp-sm) {
+    padding: 1.5rem;
+  }
+}
+
+.card--media {
+  display: grid;
+  gap: 1.25rem;
+
+  @media (min-width: $bp-sm) {
+    grid-template-columns: 14rem minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.card__media {
+  align-self: start;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-chip);
+
+  img,
+  video {
+    width: 100%;
+  }
+}
+
+.card__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.125rem 1rem;
+}
+
+.card__title {
+  font-size: 1.125rem;
+
+  a {
+    color: var(--color-text);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}
+
+.card__period {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  white-space: nowrap;
+}
+
+.card__summary {
+  margin-top: 0.5rem;
+}
+
+.card__highlights {
+  display: grid;
+  gap: 0.375rem;
+  margin-top: 0.875rem;
+  padding-left: 1.125rem;
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+
+  li::marker {
+    color: var(--color-accent);
+  }
+
+  strong {
+    color: var(--color-text);
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  padding: 0.125rem 0.625rem;
+  border-radius: 999px;
+  background: var(--color-chip);
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1rem;
+  font-size: var(--text-sm);
+  font-weight: 500;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

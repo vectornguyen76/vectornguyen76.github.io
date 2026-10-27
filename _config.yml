@@ -1,32 +1,51 @@
-# Site Build Settings
+# Site identity — also feeds <title>, Open Graph and JSON-LD via jekyll-seo-tag.
+title: Vector Nguyen
+description: AI Engineer · Multi-Agent Systems · LLMs · Agentic Voice
+url: https://vectornguyen.com
+baseurl: ""
+lang: en_US
 
-# Jekyll-paginate-v2 configuration
-#  pagination:
-#   enabled: true
-#   per_page: 5
-#   permalink: '/page/:num/'
-#   title: ':title - page :num of :max'
-#   limit: 0
-#   sort_field: 'date'
-#   sort_reverse: true
+author:
+  name: Vector Nguyen
+  role: AI Engineer
+  company: MoMo
+  company_url: https://momo.vn
+  location: Ho Chi Minh City
+  email: vectornguyen76@gmail.com
 
-# Comment out or remove the production URL
-# url: https://vectornguyen.com
-# baseurl: ""
+# Profile links. Rendered in the sidebar and footer, and emitted as JSON-LD
+# `sameAs`, so this list is the single source of truth.
+social:
+  name: Vector Nguyen
+  links:
+    - https://github.com/vectornguyen76
+    - https://www.linkedin.com/in/vectornguyen76
+    - https://www.facebook.com/vectornguyen76
 
-# jekyll-paginate configuration
-paginate: 5
-
-# Build settings
+# Build — the classic GitHub Pages builder runs Jekyll 3.10 and only
+# whitelisted plugins; keep the Gemfile on `github-pages` to match it locally.
+theme: null
 markdown: kramdown
-highlighter: rouge
-permalink: /:title/
-plugins: [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title: "Vector Nguyen"
-description: "AI Engineer · Multi-Agent Systems · LLMs · Agentic Voice"
-author: "Vector"
-# RSS 2.0 can be used instead of Atom by uncommenting following two lines
-#feed:
-#  path: rss-feed.xml
+sass:
+  style: compressed
+
+# jekyll-seo-tag reads the share image per page, so set it for every page.
+defaults:
+  - scope: { path: "" }
+    values:
+      image: /assets/img/avatar-480.jpg
+
+exclude:
+  - .bundle/
+  - .claude/
+  - .pre-commit-config.yaml
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - vendor/

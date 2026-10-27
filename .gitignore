@@ -1,7 +1,15 @@
-_site
-.sass-cache
-.jekyll-cache
+# Jekyll
+_site/
+.jekyll-cache/
 .jekyll-metadata
-vendor
+.sass-cache/
+
+# Bundler
+.bundle/
+vendor/
+
+# Editors & OS
+.claude/
 .idea/
+.vscode/
 .DS_Store

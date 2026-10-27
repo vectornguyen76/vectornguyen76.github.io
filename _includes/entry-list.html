@@ -1,0 +1,17 @@
+{%- comment -%}
+  Résumé-style entries (experience, education). Usage: {% include entry-list.html entries=list %}
+{%- endcomment -%}
+<ol class="entries">
+  {%- for entry in include.entries %}
+  <li class="entry">
+    <div class="entry__header">
+      <h3 class="entry__org">{{ entry.org }}</h3>
+      <p class="entry__period">{{ entry.period }}</p>
+    </div>
+    <p class="entry__role">{{ entry.title }}</p>
+    {%- if entry.summary %}
+    <p class="entry__summary">{% include inline-markdown.html text=entry.summary %}</p>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ol>

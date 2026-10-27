@@ -1,18 +1,17 @@
-exclude: "^(helm_charts/.*)"
-
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.1.0
+    rev: v5.0.0
     hooks:
-      - id: check-merge-conflict # checks for some markers such as "<<<<<<<", "=======", and ">>>>>>>".
-      - id: detect-private-key # detects the presence of private keys.
-      - id: end-of-file-fixer # ensures that a file is either empty, or ends with one newline.
-      - id: requirements-txt-fixer # sorts entries in requirements.txt.
-      - id: trailing-whitespace # trims trailing whitespace at the end of lines.
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
 
-  # Format YAML and other files
+  # Markdown and Liquid HTML are left alone: Prettier escapes kramdown
+  # attribute lists ({:target="_blank"}) and reflows Liquid tags.
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v2.5.1
+    rev: v3.1.0
     hooks:
       - id: prettier
-        files: \.(js|ts|jsx|tsx|css|less|html|json|markdown|md|yaml|yml)$
+        files: \.(js|json|scss|ya?ml)$
