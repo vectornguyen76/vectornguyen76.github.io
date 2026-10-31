@@ -49,7 +49,10 @@ education:
   - org: Ho Chi Minh City University of Technology and Education (HCMUTE)
     title: Mechatronics Engineering
     period: 2018 – 2022
-    summary: First Prize for the graduation project defense.
+    summary: >-
+      First Prize for the graduation project defense: an IoT control and
+      monitoring system for an automatic paper-spreading machine. Built my first
+      deep learning projects alongside the degree.
 
 skills:
   - area: Languages

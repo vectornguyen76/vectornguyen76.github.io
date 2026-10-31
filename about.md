@@ -6,7 +6,9 @@ permalink: /about/
 ---
 
 I specialize in multi-agent systems, LLMs, agentic voice and production AI infrastructure.
-My background is in Mechatronics Engineering at HCMUTE, and I moved into AI in 2022.
+I started building AI in 2021, alongside my Mechatronics Engineering degree at HCMUTE, and
+have worked as an AI Engineer since 2022. Mechatronics gave me a hardware and embedded-systems
+side that still shows: Assistant Core runs on ESP32 devices and smartwatches as well as in apps.
 
 ## Experience
 
