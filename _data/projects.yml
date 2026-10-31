@@ -15,30 +15,39 @@ building:
     url: https://assistantcore.com
     period: Jan 2024 – present
     summary: >-
-      Deploy one AI assistant everywhere — web, mobile widgets, IoT devices,
-      wearables and embedded surfaces — from a single configuration, without
-      duplicating logic per channel.
+      A multi-tenant agent and voice platform powering 50+ assistants across web
+      apps, an embeddable widget, 6 messaging channels, and ESP32 and smartwatch
+      devices — from a single configuration, offered as white-label SaaS.
     highlights:
       - >-
-        **Multi-provider:** 7+ AI providers (OpenAI, Anthropic, Google, xAI,
-        DeepSeek, AWS Bedrock, ElevenLabs, Soniox), switchable without reconfiguration.
+        **Agent harness:** streaming over 6 LLM providers and 13 models with
+        provider-neutral messages, bounded tool loops and automatic context
+        compaction; prompt caching cuts input-token cost by up to **90%**.
       - >-
-        **Voice pipeline:** sub-1s ASR → LLM → TTS streaming with VAD auto mode,
-        barge-in interruption and wake-word customization over WebSocket and MQTT+UDP.
+        **Tools:** 6 tool paths (built-in, custom HTTP, remote MCP, local connectors,
+        device MCP and IoT) behind one contract, with per-call allow/ask/deny approval
+        and execution tracing.
       - >-
-        **Knowledge & tools:** agentic RAG over documents, websites and databases;
-        MCP server integration; custom API tool calling.
+        **Voice runtime:** staged VAD → ASR → LLM → TTS and real-time speech-to-speech
+        with Opus streaming and barge-in; first audio in **~1.2 s** (real-time) and
+        ~1.5 s (staged) after the user stops talking.
       - >-
-        **White-label multi-tenant:** RBAC, custom domain routing, and an admin
-        dashboard for assistant config, users, device pairing and voice quotas.
+        **Knowledge & memory:** hybrid RAG fusing pgvector and full-text search with
+        RRF over 13+ document formats with OCR, plus long-term memory with background
+        fact extraction and nightly consolidation.
+      - >-
+        **Channels & devices:** Zalo OA, Messenger, Instagram, WhatsApp, Telegram and
+        TikTok Shop; ESP32 devices over WebSocket and MQTT+UDP with encrypted audio
+        and OTA updates.
+      - >-
+        **White-label multi-tenant:** custom domains, RBAC and credit-based billing.
     tags:
       - PostgreSQL/pgvector
       - Redis
-      - S3
+      - MCP
+      - MQTT+UDP
       - Langfuse
       - Grafana
-      - TLS 1.3
-      - JWT/OAuth 2.0
 
 side:
   - title: Search Engine System

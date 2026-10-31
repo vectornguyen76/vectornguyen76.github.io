@@ -5,26 +5,45 @@ roles:
     title: AI Engineer
     period: Dec 2024 – present
     summary: >-
-      Designed and shipped **Tro Ly An Choi** from zero — a multi-agent chat
-      assistant (1 orchestrator + 6 domain agents) integrated across 10+ MoMo
-      mini-app surfaces, reaching over **100K monthly engaged users**. Built 70+
-      agent tools covering cinema, airline, bus and train ticketing, and food
-      ordering, with deep payment integration into MoMo's checkout. Won
-      **Champions of Hacking Week** at Tech Day MoMo 2025.
+      Led end-to-end AI engineering for **Trợ Lý Ăn Chơi**, MoMo's AI lifestyle
+      assistant, reaching **1M+ users** across 28 in-app entry points. Architected
+      a multi-agent system (1 orchestrator + 6 domain agents) with **90 tools**,
+      shipping agentic commerce journeys for cinema, flight, bus and train tickets,
+      hotel and experience bookings, and Highlands Coffee orders through to MoMo
+      checkout. Cut LLM cost to **$0.0015 per daily active user** with a 95%
+      prompt-cache hit rate, and built a Memory Agent plus an online LLM-as-a-judge
+      pipeline. Won **Champion of Hacking Week** at MoMo Tech Day 2025.
 
   - org: FPT Software – AI Center
     title: AI Engineer
-    period: Apr 2024 – Dec 2024
+    period: Mar 2024 – Dec 2024
     summary: >-
-      Built multimodal RAG pipelines, multi-agent architectures and multilingual
-      AI solutions for enterprise clients across Southeast Asia.
+      Built an enterprise IT-support assistant that pairs LLM planning with
+      deterministic workflows and long-term memory, and a multimodal RAG pipeline
+      over text, images, charts and tables in PDF and DOCX files with **90%+
+      accuracy** on the project's evaluation set.
 
-  - org: FPT Software – Quy Nhon
+  - org: FPT Software – Quy Nhon (QAI)
     title: AI Engineer
-    period: Jun 2022 – Apr 2024
+    period: Jun 2022 – Feb 2024
     summary: >-
-      Built computer vision and NLP systems. Received the **Most Valuable Player
+      Built an enterprise document search product for a Japanese client on
+      embeddings and vector search, then extended it into RAG; shipped real-time
+      face recognition to production on AWS. Received the **Most Valuable Player
       2022** award and won **Second Prize** at the Quy Nhon AI Hackathon 2022.
+
+  - org: Hao Phuong Corp
+    title: Back-End Engineer
+    period: Jan 2022 – Jun 2022
+    summary: >-
+      Owned the backend of a real-time smart-farm management system on ASP.NET
+      Core: sensor data collection, remote device control and monitoring dashboards.
+
+community:
+  - org: Sudo Code – Women Techmakers & GDG Ho Chi Minh City
+    title: NLP Mentor
+    period: 2025 – present
+    summary: NLP mentor for **Sudo Code** 2025 and 2026.
 
 education:
   - org: Ho Chi Minh City University of Technology and Education (HCMUTE)
@@ -35,13 +54,19 @@ education:
 skills:
   - area: Languages
     items: Python, TypeScript, JavaScript, SQL
-  - area: AI / LLMs
-    items: Multi-agent systems, RAG, prompt engineering, MCP, LLM evaluation, voice AI (ASR/TTS/VAD)
-  - area: Frameworks
-    items: FastAPI, Next.js, React, LangChain, LangGraph, Pydantic, WebSocket, MQTT
-  - area: Databases
-    items: PostgreSQL, pgvector, Elasticsearch, Redis, Qdrant, BigQuery
+  - area: LLMs & agents
+    items: OpenAI, Anthropic, Gemini and xAI APIs; multi-agent orchestration, tool calling, MCP, context engineering, prompt caching, LLM-as-a-judge evaluation
+  - area: RAG & search
+    items: Hybrid search (pgvector + full-text, RRF), embeddings, OCR, Elasticsearch, Qdrant
+  - area: Voice AI
+    items: Streaming ASR and TTS, VAD, real-time speech-to-speech, barge-in, Opus
+  - area: ML serving
+    items: NVIDIA Triton, TensorRT, gRPC, dynamic batching
+  - area: Backend & web
+    items: FastAPI, Next.js, React, LangChain, LangGraph, Pydantic, SSE, WebSocket, MQTT
+  - area: Data
+    items: PostgreSQL, Redis, BigQuery, Airflow
   - area: Observability
-    items: Langfuse, Grafana
+    items: Langfuse, LangSmith, Prometheus, Grafana
   - area: Cloud & DevOps
-    items: AWS (Lambda, S3, CloudFront, EKS), GCP, Docker, Kubernetes, Airflow, GitHub Actions, Nginx
+    items: AWS (EKS, Lambda, S3, CloudFront), GCP, Docker, Kubernetes, Helm, GitHub Actions, Nginx

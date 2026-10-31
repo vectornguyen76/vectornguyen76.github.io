@@ -16,6 +16,10 @@ My background is in Mechatronics Engineering at HCMUTE, and I moved into AI in 2
 
 {% include entry-list.html entries=site.data.experience.education %}
 
+## Community
+
+{% include entry-list.html entries=site.data.experience.community %}
+
 ## Skills & stack
 
 <dl class="skills">
