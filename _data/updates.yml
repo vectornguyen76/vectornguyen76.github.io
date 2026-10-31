@@ -2,12 +2,12 @@
 # /updates/ shows all of them.
 
 - date: 2025-09-01
-  text: Won **Champions of Hacking Week** at **Tech Day MoMo 2025**.
+  text: Won **Champion of Hacking Week** at **MoMo Tech Day 2025**.
 
 - date: 2025-08-01
   text: >-
-    Became an **NLP Mentor** for **Sudo Code 2025**, a mentorship program by
-    Women Techmakers and GDG Ho Chi Minh City.
+    Became an **NLP Mentor** for **Sudo Code**, a mentorship program by
+    Women Techmakers and GDG Ho Chi Minh City, for its 2025 and 2026 editions.
 
 - date: 2024-12-01
   text: >-
@@ -17,8 +17,13 @@
 
 - date: 2024-03-01
   text: >-
-    Moved to Ho Chi Minh City to join **FPT Software AI Center** as an AI
+    Moved back to Ho Chi Minh City to join **FPT Software AI Center** as an AI
     Engineer, working on LLMs, multi-agent architectures and multimodal RAG.
+
+- date: 2024-01-01
+  text: >-
+    Started building **Assistant Core**, a multi-tenant agent and voice platform
+    that now powers 50+ assistants across web, messaging channels and ESP32 devices.
 
 - date: 2023-01-01
   text: Received the **Most Valuable Player 2022** award at FPT Software.
@@ -40,7 +45,7 @@
     automatic paper-spreading machine.
 
 - date: 2022-01-01
-  text: Joined **Hao Phuong Corp** as a Back End Engineer, working on smart farm management.
+  text: Joined **Hao Phuong Corp** as a Backend Engineer, working on smart farm management.
 
 - date: 2021-06-01
   text: >-

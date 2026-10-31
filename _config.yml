@@ -1,6 +1,6 @@
 # Site identity — also feeds <title>, Open Graph and JSON-LD via jekyll-seo-tag.
 title: Vector Nguyen
-description: AI Engineer · Multi-Agent Systems · LLMs · Agentic Voice
+description: AI Engineer · Multi-Agent Systems · LLMs · Voice Agents
 url: https://vectornguyen.com
 baseurl: ""
 lang: en_US

@@ -33,7 +33,7 @@ roles:
       2022** award and won **Second Prize** at the Quy Nhon AI Hackathon 2022.
 
   - org: Hao Phuong Corp
-    title: Back-End Engineer
+    title: Backend Engineer
     period: Jan 2022 – Jun 2022
     summary: >-
       Owned the backend of a real-time smart-farm management system on ASP.NET
@@ -58,7 +58,7 @@ skills:
   - area: Languages
     items: Python, TypeScript, JavaScript, SQL
   - area: LLMs & agents
-    items: OpenAI, Anthropic, Gemini and xAI APIs; multi-agent orchestration, tool calling, MCP, context engineering, prompt caching, LLM-as-a-judge evaluation
+    items: OpenAI, Anthropic, Gemini and xAI APIs; LangChain, LangGraph; multi-agent orchestration, tool calling, MCP, context engineering, prompt caching, LLM-as-a-judge evaluation
   - area: RAG & search
     items: Hybrid search (pgvector + full-text, RRF), embeddings, OCR, Elasticsearch, Qdrant
   - area: Voice AI
@@ -66,7 +66,7 @@ skills:
   - area: ML serving
     items: NVIDIA Triton, TensorRT, gRPC, dynamic batching
   - area: Backend & web
-    items: FastAPI, Next.js, React, LangChain, LangGraph, Pydantic, SSE, WebSocket, MQTT
+    items: FastAPI, Next.js, React, Pydantic, SSE, WebSocket, MQTT
   - area: Data
     items: PostgreSQL, Redis, BigQuery, Airflow
   - area: Observability

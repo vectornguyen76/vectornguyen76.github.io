@@ -5,7 +5,7 @@ description: AI Engineer at MoMo, based in Ho Chi Minh City.
 permalink: /about/
 ---
 
-I specialize in multi-agent systems, LLMs, agentic voice and production AI infrastructure.
+I specialize in multi-agent systems, LLMs, real-time voice agents and production AI infrastructure.
 I started building AI in 2021, alongside my Mechatronics Engineering degree at HCMUTE, and
 have worked as an AI Engineer since 2022. Mechatronics gave me a hardware and embedded-systems
 side that still shows: Assistant Core runs on ESP32 devices and smartwatches as well as in apps.
